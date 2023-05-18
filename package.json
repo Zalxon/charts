@@ -1,0 +1,47 @@
+{
+  "name": "@zalxon/charts",
+  "version": "1.0.0",
+  "description": "themeable reusable responsive web charts",
+  "main": "dst/index.js",
+  "module": "dst/index.esm.js",
+  "scripts": {
+    "build": "rimraf dst && microbundle --no-compress --jsx React.createElement -f modern,es,cjs --jsxFragment React.Fragment",
+    "watch": "microbundle watch src/index.js -o dst/index.js --no-compress --jsx React.createElement -f modern,es,cjs --jsxFragment React.Fragment",
+    "format": "prettier --write README.md 'src/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zalxon/charts.git"
+  },
+  "keywords": [
+    "zalxon",
+    "charts",
+    "react",
+    "theme-ui"
+  ],
+  "author": "halildogan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zalxon/charts/issues"
+  },
+  "files": [
+    "dst"
+  ],
+  "prettier": "@zalxon/prettier",
+  "homepage": "https://github.com/zalxon/charts#readme",
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "theme-ui": ">=0.15.0"
+  },
+  "devDependencies": {
+    "@zalxon/prettier": "^1.0.1",
+    "microbundle": "^0.13.0",
+    "prettier": "2.5.1",
+    "rimraf": "2.6.3"
+  },
+  "dependencies": {
+    "d3-scale": "^3.3.0",
+    "d3-shape": "^2.1.0"
+  }
+}

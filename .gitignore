@@ -1,0 +1,10 @@
+.DS_Store
+.next
+dst/
+node_modules/
+demo/node_modules/
+demo/src/
+demo/.next/
+demo/.env*.local
+
+docs
